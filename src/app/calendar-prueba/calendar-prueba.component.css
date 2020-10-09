@@ -1,0 +1,23 @@
+.tabla{
+background-color: rgb(228, 225, 225);
+width: 100%;
+border-spacing: 35px;
+border-collapse: separate;
+border: 2px solid black;
+}
+
+
+.mes{
+    text-align:center;
+}
+.celdas{
+    border: black 1px solid;
+}
+.celdas2{
+    border: black 1px solid;
+    background-color:rgb(97, 177, 209)
+}
+.celdas3{
+    border: black 1px solid;
+    background-color: rgb(187, 185, 185);
+}

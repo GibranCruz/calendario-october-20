@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  userName= 'Gibran' ; //Manual ya que no hay obtención de datos por falta de back
   title = 'prueba-calendario';
 }

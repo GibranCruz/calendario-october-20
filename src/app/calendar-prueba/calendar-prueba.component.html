@@ -1,0 +1,90 @@
+<ng-template #template>
+    <div class="modal-header">
+        <h4 class="modal-title pull-left"> Estimado {{userName}}, ingrese su recordatorio:</h4>
+    </div>
+    <div class="modal-body">
+    <label>Recordatorio (Máx 30 carácteres) :</label>
+    <input type="text" class =" form-control" maxlength="30"/><br/>
+    <label>Ciudad :</label>
+    <input type="text" class =" form-control"/><br/>
+    <label>Tiempo :</label>
+    <input type="number" class =" form-control" maxlength="4"/><br/>
+    <label>Color :</label>
+    <input type="color" class =" form-control" /><br/>
+    </div>
+    <div>
+        <div class = "modal-footer">
+            <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+                <span aria-hidden= "true">Cancelar</span></button>
+        </div>
+        <div class = "modal-footer">
+            <button type="button" class="close pull-right" aria-label="Close" (click)="save()">
+                <span aria-hidden= "true">Aceptar</span></button> 
+        </div>
+    </div>
+</ng-template>
+
+<body>
+    <h1 class="mes">October 2020</h1>
+    <table class="tabla">
+    <thead>
+        <tr>
+            <th class="celdas2">Sunday</th>
+            <th class="celdas2">Monday</th>
+            <th class="celdas2">Tuesday</th>
+            <th class="celdas2">Wednesday</th>
+            <th class="celdas2">Friday</th>
+            <th class="celdas2">Thursday</th>
+            <th class="celdas2">Saturday</th>
+        </tr>
+    </thead>
+    <tr>
+        <th class="celdas3" (click)="openModal(template)">27</th>
+        <th class="celdas" (click)="openModal(template)">28</th>
+        <th class="celdas" (click)="openModal(template)">29</th>
+        <th class="celdas" (click)="openModal(template)">30</th>
+        <th class="celdas" (click)="openModal(template)">1</th>
+        <th class="celdas" (click)="openModal(template)">2</th>
+        <th class="celdas3" (click)="openModal(template)">3</th>
+    </tr>
+    <tr>
+        <th class="celdas3" (click)="openModal(template)">4</th>
+        <th class="celdas" (click)="openModal(template)">5</th>
+        <th class="celdas" (click)="openModal(template)">6</th>
+        <th class="celdas" (click)="openModal(template)">7</th>
+        <th class="celdas" (click)="openModal(template)">8</th>
+        <th class="celdas" (click)="openModal(template)">9</th>
+        <th class="celdas3" (click)="openModal(template)">10</th>
+    </tr>
+    <tr>
+        <th class="celdas3" (click)="openModal(template)">11</th>
+        <th class="celdas" (click)="openModal(template)">12</th>
+        <th class="celdas" (click)="openModal(template)">13</th>
+        <th class="celdas" (click)="openModal(template)" >14</th>
+        <th class="celdas" (click)="openModal(template)">15</th>
+        <th class="celdas" (click)="openModal(template)">16</th>
+        <th class="celdas3" (click)="openModal(template)">17</th>
+    </tr>
+    <tr>
+        <th class="celdas3" (click)="openModal(template)">18</th>
+        <th class="celdas" (click)="openModal(template)">18</th>
+        <th class="celdas" (click)="openModal(template)">20</th>
+        <th class="celdas" (click)="openModal(template)">21</th>
+        <th class="celdas" (click)="openModal(template)">22</th>
+        <th class="celdas" (click)="openModal(template)">23</th>
+        <th class="celdas3" (click)="openModal(template)">24</th>
+    </tr>
+    <tr>
+        <th class="celdas3" (click)="openModal(template)">25</th>
+        <th class="celdas" (click)="openModal(template)">26</th>
+        <th class="celdas" (click)="openModal(template)">27</th>
+        <th class="celdas"(click)="openModal(template)">28</th>
+        <th class="celdas" (click)="openModal(template)">29</th>
+        <th class="celdas" (click)="openModal(template)">30</th>
+        <th class="celdas3" (click)="openModal(template)">31</th>
+    </tr>
+    </table>
+
+    
+</body>
+
